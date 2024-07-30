@@ -1,3 +1,4 @@
-# add the following to _config.yml file
-title: YOUR NAME
-theme: jeykll-theme-minimal
+title: Shaw Talebi
+#description: text below image
+show_downloads: true
+theme: jekyll-theme-minimal
