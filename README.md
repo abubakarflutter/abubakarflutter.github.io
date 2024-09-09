@@ -12,7 +12,9 @@
 **Senior Mobile App Developer - Flutter @ Technupur Pvt Ltd (_March 2022 - May 2023_)**
 - Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
 
+
 ## Work Portfolio
-![Tapday Project Screenshot](assets/img/project-01.png)
+
 **Tapday - App Builder**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
+Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
+![Tapday Project Screenshot](assets/img/project-01.png)
