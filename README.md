@@ -1,6 +1,6 @@
 # Senior Flutter Developer
 
-#### Technical Skills: Flutter, Dart, Firebase, Flutterflow, REST & GraphQl
+#### Technical Skills: Flutter, Dart, Firebase, FlutterFlow, REST & GraphQl
 
 ## Education
 - B.S., Software Engineering | Government College University (_May 2020_)
