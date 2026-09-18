@@ -1,20 +1,7 @@
-# Senior Flutter Developer
+# Abubakar Siddique — Flutter Portfolio
 
-#### Technical Skills: Flutter, Dart, Firebase, FlutterFlow, REST & GraphQl
+Personal site for **Muhammad Abubakar Siddique**, Senior Flutter Developer.
 
-## Education
-- B.S., Software Engineering | Government College University (_May 2020_)
+Live: [https://abubakarflutter.github.io](https://abubakarflutter.github.io)
 
-## Work Experience
-**Senior Flutter Developer @ Fillinx Solutions (_May 2023 - Present_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-
-**Senior Mobile App Developer - Flutter @ Technupur Pvt Ltd (_March 2022 - May 2023_)**
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
-
-
-## Work Portfolio
-
-**Tapday - App Builder**
-Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-![Tapday Project Screenshot](assets/img/project-01.png)
+The page is a static GitHub Pages site: `index.html`, `assets/css/styles.css`, and `assets/js/main.js`.
