@@ -140,8 +140,6 @@ h4 {
   border-radius: 9999px;
   overflow: hidden;
   flex-shrink: 0;
-  border: 2px solid var(--flutter-sky);
-  background: #e8fbff;
 }
 
 .avatar img {
@@ -193,8 +191,7 @@ html.js .fade-in-section.is-visible {
 #home,
 #projects,
 #skills,
-#contact,
-#company-projects {
+#contact {
   scroll-margin-top: 5.5rem;
 }
 
