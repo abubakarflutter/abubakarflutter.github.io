@@ -101,11 +101,11 @@ h4 {
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 0 8px 32px rgba(1, 117, 194, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px rgba(1, 117, 194, 0.08);
 }
 
 .nav-glass {
@@ -175,14 +175,27 @@ h4 {
 }
 
 .fade-in-section {
+  opacity: 1;
+  transform: none;
+}
+
+html.js .fade-in-section {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.fade-in-section.is-visible {
+html.js .fade-in-section.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#home,
+#projects,
+#skills,
+#contact,
+#company-projects {
+  scroll-margin-top: 5.5rem;
 }
 
 .platform-badge {
@@ -200,14 +213,25 @@ h4 {
 }
 
 .logo-orb {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 1.25rem;
   display: grid;
   place-items: center;
-  background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 0 10px 30px rgba(1, 117, 194, 0.1);
+  box-shadow: 0 10px 30px rgba(1, 117, 194, 0.12);
+}
+
+.logo-orb.flutter {
+  background: linear-gradient(180deg, #e6f7ff, #c9edff);
+}
+
+.logo-orb.android {
+  background: linear-gradient(180deg, #ecfdf3, #d1fae5);
+}
+
+.logo-orb.apple {
+  background: linear-gradient(180deg, #f8fafc, #e2e8f0);
 }
 
 .cover {

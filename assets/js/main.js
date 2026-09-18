@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 const wave = document.querySelector(".wave-emoji");
 if (wave) {
   const play = () => {
