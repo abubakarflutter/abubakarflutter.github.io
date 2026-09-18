@@ -45,7 +45,7 @@ const sectionObserver = new IntersectionObserver(
 );
 sections.forEach((section) => sectionObserver.observe(section));
 
-document.querySelectorAll(".store-btn").forEach((link) => {
+document.querySelectorAll(".store-chip").forEach((link) => {
   const href = (link.getAttribute("href") || "").trim();
   if (!href) {
     link.classList.add("is-placeholder");

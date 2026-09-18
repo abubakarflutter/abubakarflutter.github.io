@@ -311,73 +311,48 @@ html.js .fade-in-section.is-visible {
   align-items: center;
 }
 
-.store-btn {
-  --store-fill: #0f172a;
+a.store-chip {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.9rem 0.45rem 0.7rem;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 9999px;
-  color: #334155;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  font-size: 0.88rem;
-  font-weight: 500;
   text-decoration: none;
+  cursor: pointer;
   transition: color 0.28s ease, transform 0.28s ease, box-shadow 0.28s ease,
     border-color 0.28s ease;
 }
 
-.store-btn--play {
-  --store-fill: #137333;
-}
-
-.store-btn--apple {
-  --store-fill: #111827;
-}
-
-.store-btn img,
-.store-btn span {
+a.store-chip > * {
   position: relative;
   z-index: 1;
 }
 
-.store-btn img {
-  width: 1.05rem;
-  height: 1.05rem;
-  flex-shrink: 0;
+a.store-chip img {
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), filter 0.28s ease;
 }
 
-.store-btn::before {
+a.store-chip::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: var(--store-fill);
-  transform: scale(0.55);
-  opacity: 0;
+  background: linear-gradient(135deg, var(--flutter-navy), var(--flutter-sky));
+  transform: scaleX(0);
+  transform-origin: left center;
   z-index: 0;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease;
+  transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.store-btn::after {
+a.store-chip::after {
   content: "";
   position: absolute;
   top: 0;
   left: -130%;
-  width: 45%;
+  width: 42%;
   height: 100%;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.38),
+    rgba(255, 255, 255, 0.4),
     transparent
   );
   transform: skewX(-22deg);
@@ -385,40 +360,39 @@ html.js .fade-in-section.is-visible {
   z-index: 2;
 }
 
-.store-btn:hover,
-.store-btn:focus-visible {
+a.store-chip:hover,
+a.store-chip:focus-visible {
   color: #fff;
   border-color: transparent;
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.16);
+  box-shadow: 0 12px 24px rgba(1, 117, 194, 0.22);
 }
 
-.store-btn:hover::before,
-.store-btn:focus-visible::before {
-  transform: scale(1);
-  opacity: 1;
+a.store-chip:hover::before,
+a.store-chip:focus-visible::before {
+  transform: scaleX(1);
 }
 
-.store-btn:hover::after,
-.store-btn:focus-visible::after {
+a.store-chip:hover::after,
+a.store-chip:focus-visible::after {
   animation: store-shine 0.7s ease;
 }
 
-.store-btn:hover img,
-.store-btn:focus-visible img {
-  transform: scale(1.14) rotate(-8deg);
+a.store-chip:hover img,
+a.store-chip:focus-visible img {
+  transform: scale(1.16) rotate(-8deg);
 }
 
-.store-btn--apple:hover img,
-.store-btn--apple:focus-visible img {
+a.store-chip--apple:hover img,
+a.store-chip--apple:focus-visible img {
   filter: invert(1);
 }
 
-.store-btn.is-placeholder {
+a.store-chip.is-placeholder {
   cursor: pointer;
 }
 
-.store-btn[hidden] {
+a.store-chip[hidden] {
   display: none !important;
 }
 
