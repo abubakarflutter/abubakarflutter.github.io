@@ -44,3 +44,11 @@ const sectionObserver = new IntersectionObserver(
   { rootMargin: "-40% 0px -50% 0px", threshold: 0.1 }
 );
 sections.forEach((section) => sectionObserver.observe(section));
+
+document.querySelectorAll(".store-pill").forEach((link) => {
+  const href = (link.getAttribute("href") || "").trim();
+  if (!href) {
+    link.classList.add("is-placeholder");
+    link.addEventListener("click", (event) => event.preventDefault());
+  }
+});
