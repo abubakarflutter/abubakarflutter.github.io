@@ -190,6 +190,8 @@ html.js .fade-in-section.is-visible {
 
 #home,
 #projects,
+#education,
+#experience,
 #skills,
 #contact {
   scroll-margin-top: 5.5rem;
@@ -229,6 +231,32 @@ html.js .fade-in-section.is-visible {
 
 .logo-orb.apple {
   background: linear-gradient(180deg, #f8fafc, #e2e8f0);
+}
+
+.logo-orb img {
+  width: 2.15rem;
+  height: 2.15rem;
+  display: block;
+}
+
+.logo-orb.android img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.logo-orb.apple img {
+  width: 1.85rem;
+  height: 1.85rem;
+}
+
+.resume-card + .resume-card {
+  margin-top: 1rem;
+}
+
+.resume-meta {
+  color: #64748b;
+  font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .cover {
