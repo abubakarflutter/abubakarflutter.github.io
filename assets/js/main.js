@@ -25,7 +25,7 @@ const fadeObserver = new IntersectionObserver(
 fadeEls.forEach((el) => fadeObserver.observe(el));
 
 const navLinks = document.querySelectorAll(".nav-link");
-const sections = ["home", "projects", "skills", "contact"]
+const sections = ["home", "skills", "projects", "contact"]
   .map((id) => document.getElementById(id))
   .filter(Boolean);
 
