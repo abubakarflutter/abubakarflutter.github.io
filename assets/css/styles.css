@@ -248,6 +248,24 @@ html.js .fade-in-section.is-visible {
   height: 1.85rem;
 }
 
+.edu-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 1rem;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #eef6ff, #dbeafe);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(1, 117, 194, 0.08);
+}
+
+.edu-icon img {
+  width: 1.85rem;
+  height: 1.85rem;
+  display: block;
+}
+
 .resume-card + .resume-card {
   margin-top: 1rem;
 }
