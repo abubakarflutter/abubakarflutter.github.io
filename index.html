@@ -3,766 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abubakar Siddique · Senior Flutter Developer</title>
+    <title>Muhammad Abubakar | Senior Flutter Developer & Mobile Engineer</title>
     <meta
       name="description"
-      content="Senior Flutter developer building Android and iOS apps with Dart, Firebase, REST, GraphQL, and FlutterFlow."
+      content="Portfolio of Muhammad Abubakar, a Senior Flutter Developer with 5+ years of experience building production Android and iOS applications using Flutter, Dart, Clean Architecture, Firebase, APIs and modern state management."
     />
+    <meta property="og:title" content="Muhammad Abubakar | Senior Flutter Developer & Mobile Engineer" />
+    <meta
+      property="og:description"
+      content="Senior Flutter Developer with 5+ years of experience building production Android and iOS applications."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abubakarflutter.github.io/" />
+    <meta property="og:image" content="https://abubakarflutter.github.io/assets/img/profile.webp" />
+    <meta name="twitter:card" content="summary" />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              flutter: {
-                navy: "#0175C2",
-                blue: "#02569B",
-                sky: "#13B9FD",
-                cyan: "#54C5F8",
-              },
-              android: "#3DDC84",
-              ios: "#0A84FF",
-            },
-          },
-        },
-      };
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css?v=layout3" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=redesign1" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Abubakar",
+        "jobTitle": "Senior Flutter Developer",
+        "email": "mailto:abubakarflutter@gmail.com",
+        "url": "https://abubakarflutter.github.io/",
+        "sameAs": [
+          "https://github.com/abubakarflutter",
+          "https://www.linkedin.com/in/abubakarflutter/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "PK"
+        }
+      }
+    </script>
     <script>
       document.documentElement.classList.add("js");
     </script>
   </head>
-  <body class="min-h-screen pt-24 pb-12 px-4">
-    <div class="mesh-gradient">
-      <div class="mesh-accent-1"></div>
-      <div class="mesh-accent-2"></div>
-    </div>
+  <body>
+    <div class="mesh" aria-hidden="true"></div>
 
-    <nav
-      class="fixed top-4 left-1/2 -translate-x-1/2 nav-glass rounded-full py-2 px-2 sm:px-3 z-50 flex items-center space-x-0.5 sm:space-x-2"
-      aria-label="Primary"
-    >
-      <a
-        href="#home"
-        class="nav-link is-active text-gray-700 font-medium px-3 sm:px-4 py-2 rounded-full hover:bg-sky-50 transition duration-300"
-        data-section="home"
-        >Home</a
-      >
-      <a
-        href="#skills"
-        class="nav-link text-gray-700 font-medium px-3 sm:px-4 py-2 rounded-full hover:bg-sky-50 transition duration-300"
-        data-section="skills"
-        >Skills</a
-      >
-      <a
-        href="#projects"
-        class="nav-link text-gray-700 font-medium px-3 sm:px-4 py-2 rounded-full hover:bg-sky-50 transition duration-300"
-        data-section="projects"
-        >Projects</a
-      >
-      <a
-        href="mailto:abubakarflutter@gmail.com"
-        class="cta-mail text-white font-medium px-3 sm:px-4 py-2 rounded-full hover:opacity-90 transition duration-300"
-        >Contact</a
-      >
-    </nav>
-
-    <div class="max-w-5xl mx-auto">
-      <div id="home" class="p-2 sm:p-8">
-        <div
-          class="flex flex-col sm:flex-row items-center sm:items-start mb-14 glass-card rounded-2xl p-6 fade-in-section is-visible"
-        >
-          <div class="avatar mb-4 sm:mb-0 sm:mr-8 self-center">
-            <img
-              src="assets/img/profile.webp"
-              alt="Portrait of Muhammad Abubakar Siddique"
-            />
-          </div>
-          <div class="text-center sm:text-left sm:flex-1 sm:pr-8">
-            <h1 class="text-4xl font-semibold text-gray-800 mb-1">
-              Abubakar Siddique
-            </h1>
-            <h2 class="text-xl text-flutter-navy mb-4">
-              Senior Flutter Developer
-            </h2>
-            <p class="text-gray-600 leading-relaxed">
-              Building beautiful, functional Android and iOS experiences with
-              Flutter and Dart. One codebase, two stores — Firebase, REST,
-              GraphQL, and FlutterFlow when speed matters. Shipping apps that
-              feel native on every device.
-            </p>
-            <div class="mt-4 flex space-x-4 justify-center sm:justify-start">
-              <a
-                href="https://github.com/abubakarflutter"
-                class="text-gray-600 hover:text-flutter-navy transition-colors"
-                aria-label="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.48 11.48 0 0 1 12 5.8c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/abubakarflutter/"
-                class="text-gray-600 hover:text-ios transition-colors"
-                aria-label="LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764S5.534 3.204 6.5 3.204s1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-10 rounded-2xl p-6 overflow-hidden fade-in-section is-visible">
-          <div class="flex flex-col items-center mb-5">
-            <div class="flex items-center gap-4 mb-4">
-              <div class="logo-orb flutter" title="Flutter">
-                <img src="assets/img/brands/flutter.svg" alt="Flutter" />
-              </div>
-              <div class="logo-orb android" title="Android">
-                <img src="assets/img/brands/android.svg" alt="Android" />
-              </div>
-              <div class="logo-orb apple" title="iOS">
-                <img src="assets/img/brands/apple.svg" alt="iOS" />
-              </div>
-            </div>
-            <h3 class="text-2xl font-medium text-gray-800 text-center">
-              Building Exceptional Flutter Apps
-            </h3>
-          </div>
-          <p class="text-gray-600 leading-relaxed text-center max-w-xl mx-auto">
-            One Dart codebase. Two stores. Native-feeling Android and iOS apps
-            — from first sketch to Play Store and App Store.
-          </p>
-        </div>
-
-        <div
-          id="skills"
-          class="mb-16 rounded-2xl p-6 fade-in-section"
-          style="
-            background-color: rgba(245, 245, 245, 0.45);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
-          "
-        >
-          <h3 class="text-2xl font-medium text-gray-800">Stuff I've worked with</h3>
-          <div class="flex flex-wrap gap-3 pt-6">
-            <span class="skill-chip"><img src="assets/img/skills/dart.svg" alt="" />Dart</span>
-            <span class="skill-chip"><img src="assets/img/skills/flutter.svg" alt="" />Flutter</span>
-            <span class="skill-chip"><img src="assets/img/skills/android.svg" alt="" />Android</span>
-            <span class="skill-chip"><img src="assets/img/skills/apple.svg" alt="" />iOS</span>
-            <span class="skill-chip"><img src="assets/img/skills/flutterflow.svg" alt="" />FlutterFlow</span>
-            <span class="skill-chip"><img src="assets/img/skills/firebase.svg" alt="" />Firebase</span>
-            <span class="skill-chip"><img src="assets/img/skills/rest.svg" alt="" />REST</span>
-            <span class="skill-chip"><img src="assets/img/skills/graphql.svg" alt="" />GraphQL</span>
-            <span class="skill-chip"><img src="assets/img/skills/provider.svg" alt="" />Provider</span>
-            <span class="skill-chip"><img src="assets/img/skills/getx.svg" alt="" />GetX</span>
-            <span class="skill-chip"><img src="assets/img/skills/shopify.svg" alt="" />Shopify</span>
-            <span class="skill-chip"><img src="assets/img/skills/klaviyo.svg" alt="" />Klaviyo</span>
-            <span class="skill-chip"><img src="assets/img/skills/zegocloud.svg" alt="" />ZegoCloud</span>
-            <span class="skill-chip"><img src="assets/img/skills/flutter-web.svg" alt="" />Flutter Web</span>
-            <span class="skill-chip"><img src="assets/img/skills/desktop.svg" alt="" />Desktop</span>
-            <span class="skill-chip"><img src="assets/img/skills/git.svg" alt="" />Git</span>
-            <span class="skill-chip"><img src="assets/img/skills/githubactions.svg" alt="" />GitHub Actions</span>
-            <span class="skill-chip"><img src="assets/img/skills/figma.svg" alt="" />Figma</span>
-          </div>
-        </div>
-
-        <div id="projects" class="mb-20 fade-in-section">
-          <h3 class="text-2xl font-medium text-gray-800 mb-6">Projects</h3>
-          <!-- Store links: set href on each Google Play / App Store pill.
-               Delete a pill if that project is only on one store. -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-honey" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#FFF7D6" />
-                      <stop offset="100%" stop-color="#F59E0B" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-honey)" />
-                  <rect x="128" y="28" width="144" height="196" rx="22" fill="#111827" />
-                  <rect x="136" y="42" width="128" height="168" rx="14" fill="#FFFBEB" />
-                  <rect x="150" y="56" width="100" height="12" rx="6" fill="#F59E0B" />
-                  <rect x="150" y="80" width="100" height="36" rx="10" fill="#FEF3C7" />
-                  <rect x="150" y="126" width="46" height="28" rx="8" fill="#FDE68A" />
-                  <rect x="204" y="126" width="46" height="28" rx="8" fill="#FBBF24" />
-                  <rect x="150" y="168" width="100" height="22" rx="11" fill="#D97706" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-amber-400 w-12 h-12 grid place-items-center text-white font-bold">
-                  H
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Honeydu</h4>
-                <p class="text-amber-600 text-sm mb-3">Creator Payments</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Flutter client for invoicing and B2B payouts — helping
-                  freelancers send bills and get paid from Android and iOS.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter</span>
-                  <span class="chip bg-green-50 text-emerald-700 border border-green-100">Android</span>
-                  <span class="chip bg-slate-50 text-slate-700 border border-slate-200">iOS</span>
-                  <span class="chip bg-orange-50 text-orange-700 border border-orange-100">Firebase</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-zego" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#1E1B4B" />
-                      <stop offset="100%" stop-color="#4F46E5" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-zego)" />
-                  <circle cx="200" cy="96" r="44" fill="#C7D2FE" />
-                  <circle cx="292" cy="120" r="28" fill="#A5B4FC" />
-                  <rect x="150" y="168" width="100" height="28" rx="14" fill="#22C55E" />
-                  <circle cx="92" cy="168" r="16" fill="#EF4444" />
-                  <circle cx="308" cy="168" r="16" fill="#E5E7EB" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-indigo-500 w-12 h-12 grid place-items-center text-white font-bold">
-                  Z
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Zego Calling</h4>
-                <p class="text-indigo-500 text-sm mb-3">Audio &amp; Video Calls</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Real-time calling with ZegoCloud, push notifications, and a
-                  Flutter UI that works the same on Android and iOS.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter</span>
-                  <span class="chip bg-violet-50 text-violet-700 border border-violet-100">ZegoCloud</span>
-                  <span class="chip bg-orange-50 text-orange-700 border border-orange-100">FCM</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-rest" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#FFEDD5" />
-                      <stop offset="100%" stop-color="#F97316" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-rest)" />
-                  <rect x="40" y="48" width="150" height="140" rx="18" fill="#fff" />
-                  <rect x="56" y="64" width="118" height="64" rx="12" fill="#FED7AA" />
-                  <rect x="56" y="140" width="80" height="10" rx="5" fill="#FB923C" />
-                  <rect x="56" y="158" width="50" height="10" rx="5" fill="#FDBA74" />
-                  <rect x="220" y="36" width="140" height="164" rx="22" fill="#111827" />
-                  <rect x="228" y="50" width="124" height="136" rx="14" fill="#FFF7ED" />
-                  <circle cx="290" cy="108" r="28" fill="#FDBA74" />
-                  <rect x="248" y="150" width="84" height="18" rx="9" fill="#EA580C" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-orange-500 w-12 h-12 grid place-items-center text-white font-bold">
-                  R
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Restaurant App</h4>
-                <p class="text-orange-600 text-sm mb-3">Animated Ordering UI</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Motion-first menu and checkout screens — Hero transitions,
-                  reusable widgets, and a layout that holds up on both phones.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter</span>
-                  <span class="chip bg-orange-50 text-orange-700 border border-orange-100">Animations</span>
-                  <span class="chip bg-green-50 text-emerald-700 border border-green-100">Android</span>
-                  <span class="chip bg-slate-50 text-slate-700 border border-slate-200">iOS</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-exp" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#ECFDF5" />
-                      <stop offset="100%" stop-color="#10B981" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-exp)" />
-                  <rect x="48" y="140" width="28" height="48" rx="6" fill="#059669" />
-                  <rect x="92" y="112" width="28" height="76" rx="6" fill="#34D399" />
-                  <rect x="136" y="88" width="28" height="100" rx="6" fill="#047857" />
-                  <rect x="180" y="120" width="28" height="68" rx="6" fill="#6EE7B7" />
-                  <rect x="224" y="72" width="28" height="116" rx="6" fill="#10B981" />
-                  <rect x="268" y="100" width="28" height="88" rx="6" fill="#A7F3D0" />
-                  <rect x="312" y="56" width="28" height="132" rx="6" fill="#065F46" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-emerald-500 w-12 h-12 grid place-items-center text-white font-bold">
-                  $
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Expense Tracker</h4>
-                <p class="text-emerald-600 text-sm mb-3">Daily Spending</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  A clean Flutter tracker for everyday spend — categories,
-                  totals, and a UI built to be skimmed in a few seconds.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter</span>
-                  <span class="chip bg-green-50 text-emerald-700 border border-green-100">Dart</span>
-                  <span class="chip bg-cyan-50 text-cyan-700 border border-cyan-100">Charts</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-tap" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#E0F2FE" />
-                      <stop offset="100%" stop-color="#0175C2" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-tap)" />
-                  <rect x="36" y="40" width="160" height="150" rx="16" fill="#fff" opacity="0.95" />
-                  <rect x="52" y="56" width="128" height="18" rx="6" fill="#BAE6FD" />
-                  <rect x="52" y="86" width="60" height="40" rx="8" fill="#7DD3FC" />
-                  <rect x="120" y="86" width="60" height="40" rx="8" fill="#38BDF8" />
-                  <rect x="52" y="136" width="128" height="36" rx="8" fill="#0EA5E9" />
-                  <rect x="220" y="28" width="150" height="180" rx="24" fill="#0F172A" />
-                  <rect x="230" y="44" width="130" height="148" rx="16" fill="#F0F9FF" />
-                  <rect x="246" y="60" width="98" height="54" rx="10" fill="#38BDF8" />
-                  <rect x="246" y="124" width="98" height="12" rx="6" fill="#0369A1" />
-                  <rect x="246" y="146" width="64" height="12" rx="6" fill="#7DD3FC" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-flutter-navy w-12 h-12 grid place-items-center">
-                  <svg width="22" height="26" viewBox="0 0 256 317" aria-hidden="true">
-                    <polygon fill="#45D1FD" points="158,0 0,158 49,207 256,0" />
-                    <polygon fill="#fff" points="157,243 103,270 157,317 256,242" />
-                  </svg>
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Tapday</h4>
-                <p class="text-flutter-navy text-sm mb-3">Shopify App Builder · Fillinx</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  No-code builder that turns Shopify stores into native Android
-                  and iOS apps — drag-and-drop widgets, live product sync, and
-                  push campaigns from one Flutter engine.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter</span>
-                  <span class="chip bg-green-50 text-emerald-700 border border-green-100">Android</span>
-                  <span class="chip bg-slate-50 text-slate-700 border border-slate-200">iOS</span>
-                  <span class="chip bg-lime-50 text-lime-700 border border-lime-100">Shopify</span>
-                  <span class="chip bg-orange-50 text-orange-700 border border-orange-100">Firebase</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-shop" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#F5F3FF" />
-                      <stop offset="100%" stop-color="#7C3AED" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-shop)" />
-                  <rect x="70" y="36" width="110" height="168" rx="18" fill="#111827" />
-                  <rect x="78" y="50" width="94" height="140" rx="12" fill="#F5F3FF" />
-                  <rect x="88" y="62" width="74" height="48" rx="8" fill="#C4B5FD" />
-                  <rect x="88" y="120" width="74" height="8" rx="4" fill="#6D28D9" />
-                  <rect x="220" y="36" width="110" height="168" rx="18" fill="#111827" />
-                  <rect x="228" y="50" width="94" height="140" rx="12" fill="#ECFDF5" />
-                  <rect x="238" y="62" width="74" height="48" rx="8" fill="#6EE7B7" />
-                  <rect x="238" y="120" width="74" height="8" rx="4" fill="#047857" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-violet-600 w-12 h-12 grid place-items-center text-white font-bold">
-                  S
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Storefront Apps</h4>
-                <p class="text-violet-600 text-sm mb-3">Ecommerce · Fillinx Solutions</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Senior Flutter work on merchant Android and iOS storefronts
-                  — catalogs, checkout, and Shopify plugins wired through REST
-                  and GraphQL.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter</span>
-                  <span class="chip bg-violet-50 text-violet-700 border border-violet-100">GraphQL</span>
-                  <span class="chip bg-cyan-50 text-cyan-700 border border-cyan-100">REST</span>
-                  <span class="chip bg-orange-50 text-orange-700 border border-orange-100">Klaviyo</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-web" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#F0F9FF" />
-                      <stop offset="100%" stop-color="#0EA5E9" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-web)" />
-                  <rect x="40" y="48" width="220" height="132" rx="12" fill="#0F172A" />
-                  <rect x="48" y="58" width="204" height="14" rx="4" fill="#1E293B" />
-                  <rect x="48" y="80" width="204" height="90" rx="6" fill="#E0F2FE" />
-                  <rect x="60" y="96" width="80" height="10" rx="5" fill="#0284C7" />
-                  <rect x="60" y="116" width="160" height="8" rx="4" fill="#7DD3FC" />
-                  <rect x="280" y="64" width="80" height="120" rx="12" fill="#111827" />
-                  <rect x="286" y="76" width="68" height="96" rx="8" fill="#ECFEFF" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-sky-500 w-12 h-12 grid place-items-center text-white font-bold">
-                  W
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Flutter Web &amp; Desktop</h4>
-                <p class="text-sky-600 text-sm mb-3">Multi-platform · Technupur</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Performance and feature work on Flutter web and desktop
-                  alongside mobile — same Dart code, tighter frames, fewer
-                  platform surprises.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter Web</span>
-                  <span class="chip bg-slate-50 text-slate-700 border border-slate-200">Desktop</span>
-                  <span class="chip bg-green-50 text-emerald-700 border border-green-100">Dart</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card glass-card rounded-2xl overflow-hidden flex flex-col">
-              <div class="relative cover">
-                <svg viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="g-furn" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#ECFEFF" />
-                      <stop offset="100%" stop-color="#14B8A6" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="400" height="224" fill="url(#g-furn)" />
-                  <rect x="90" y="70" width="220" height="90" rx="8" fill="#0F766E" />
-                  <rect x="108" y="52" width="184" height="28" rx="6" fill="#99F6E4" />
-                  <rect x="118" y="92" width="70" height="48" rx="8" fill="#5EEAD4" />
-                  <rect x="210" y="92" width="70" height="48" rx="8" fill="#2DD4BF" />
-                  <rect x="160" y="160" width="80" height="12" rx="6" fill="#134E4A" />
-                </svg>
-                <div class="absolute top-4 left-4 rounded-xl overflow-hidden app-icon bg-teal-500 w-12 h-12 grid place-items-center text-white font-bold">
-                  F
-                </div>
-              </div>
-              <div class="p-5 flex flex-col flex-grow">
-                <h4 class="font-semibold text-xl text-gray-800">Furniture Store</h4>
-                <p class="text-teal-600 text-sm mb-3">Commerce UI</p>
-                <p class="text-gray-600 text-sm mb-4">
-                  Catalog browsing with SliverAppBar, cached images, and Hero
-                  transitions — a Flutter storefront pattern used across client
-                  work.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span class="chip bg-sky-50 text-flutter-navy border border-sky-100">Flutter</span>
-                  <span class="chip bg-teal-50 text-teal-700 border border-teal-100">Slivers</span>
-                  <span class="chip bg-orange-50 text-orange-700 border border-orange-100">Hero</span>
-                </div>
-                <div class="card-actions">
-                <div class="store-links">
-                  <a class="store-chip store-chip--play" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/googleplay.svg" alt="" />
-                    </span>
-                    <span>Play Store</span>
-                  </a>
-                  <a class="store-chip store-chip--apple" href="">
-                    <span class="store-chip__icon">
-                      <img src="assets/img/skills/apple.svg" alt="" />
-                    </span>
-                    <span>App Store</span>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div id="education" class="mb-14 fade-in-section">
-          <h3 class="text-2xl font-medium text-gray-800 mb-6">Education</h3>
-          <div class="glass-card rounded-2xl p-6 resume-card">
-            <div class="flex items-start gap-4">
-              <div class="edu-icon" aria-hidden="true">
-                <img src="assets/img/education-cap.png" alt="" />
-              </div>
-              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 flex-1 min-w-0">
-                <div>
-                  <h4 class="font-semibold text-xl text-gray-800">
-                    B.S. Software Engineering
-                  </h4>
-                  <p class="text-flutter-navy mt-1">
-                    Government College University
-                  </p>
-                </div>
-                <p class="resume-meta">May 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="experience" class="mb-20 fade-in-section">
-          <h3 class="text-2xl font-medium text-gray-800 mb-6">Experience</h3>
-
-          <div class="glass-card rounded-2xl p-6 resume-card">
-            <div class="flex items-start gap-4">
-              <div class="org-logo org-logo--fillinx">
-                <img src="assets/img/orgs/fillinx.png" alt="Fillinx Solutions" />
-              </div>
-              <div class="flex-1 min-w-0">
-                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                  <div>
-                    <h4 class="font-semibold text-xl text-gray-800">
-                      Senior Mobile App Developer
-                    </h4>
-                    <p class="text-flutter-navy mt-1">
-                      Fillinx Solutions · Full-time
-                    </p>
-                    <p class="resume-place">
-                      Faisalabad, Punjab, Pakistan · Hybrid
-                    </p>
-                  </div>
-                  <p class="resume-meta">May 2023 – Present</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="glass-card rounded-2xl p-6 resume-card">
-            <div class="flex items-start gap-4">
-              <div class="org-logo">
-                <img src="assets/img/orgs/technupur.png" alt="Technupur" />
-              </div>
-              <div class="flex-1 min-w-0">
-                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                  <div>
-                    <h4 class="font-semibold text-xl text-gray-800">
-                      Senior Flutter Developer
-                    </h4>
-                    <p class="text-flutter-navy mt-1">Technupur · Full-time</p>
-                    <p class="resume-place">
-                      Faisalabad, Punjab, Pakistan · On-site
-                    </p>
-                  </div>
-                  <p class="resume-meta">Apr 2022 – May 2023</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="glass-card rounded-2xl p-6 resume-card">
-            <div class="flex items-start gap-4">
-              <div class="org-logo">
-                <img src="assets/img/orgs/invictus.png" alt="Invictus Solutions" />
-              </div>
-              <div class="flex-1 min-w-0">
-                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                  <div>
-                    <h4 class="font-semibold text-xl text-gray-800">
-                      Junior Flutter Developer
-                    </h4>
-                    <p class="text-flutter-navy mt-1">
-                      Invictus Solutions · Full-time
-                    </p>
-                    <p class="resume-place">Faisalabad, Punjab, Pakistan</p>
-                  </div>
-                  <p class="resume-meta">Jan 2021 – Jun 2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <header class="site-header" id="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="#about">Muhammad Abubakar</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span></span>
+        </button>
+        <nav id="nav-links" class="nav-links" aria-label="Primary">
+          <a class="nav-link" href="#about" data-section="about">About</a>
+          <a class="nav-link" href="#skills" data-section="skills">Skills</a>
+          <a class="nav-link" href="#projects" data-section="projects">Projects</a>
+          <a class="nav-link" href="#experience" data-section="experience">Experience</a>
+          <a class="nav-link" href="#contact" data-section="contact">Contact</a>
+          <a class="btn btn-primary resume-link hidden" href="" download>Resume ↓</a>
+        </nav>
       </div>
+    </header>
 
-      <footer id="contact" class="px-2 sm:px-8 fade-in-section">
-        <div class="glass-card rounded-2xl p-8 text-center">
-          <h2 class="text-3xl font-semibold text-gray-800 mb-3">
-            <span class="wave-emoji">👋</span> Like what you see?
-          </h2>
-          <p class="text-gray-600 max-w-lg mx-auto mb-6">
-            Shoot me an email or a DM and I’ll respond as soon as I can.
-          </p>
-          <div class="flex flex-wrap gap-3 justify-center">
-            <a
-              href="mailto:abubakarflutter@gmail.com"
-              class="cta-mail text-white font-medium px-5 py-2.5 rounded-full"
-              >Contact (abubakarflutter@gmail.com)</a
-            >
-            <a
-              href="https://github.com/abubakarflutter"
-              class="px-5 py-2.5 rounded-full bg-white/80 border border-white font-medium text-gray-700"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-            <a
-              href="https://www.linkedin.com/in/abubakarflutter/"
-              class="px-5 py-2.5 rounded-full bg-white/80 border border-white font-medium text-gray-700"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
+    <div id="home-view">
+      <section class="hero wrap" id="about">
+        <div class="hero-grid fade-in is-visible">
+          <div>
+            <p class="hero-kicker">Hi, I'm Muhammad Abubakar</p>
+            <h1>Senior Flutter Developer<br />&amp; Mobile Engineer</h1>
+            <p class="hero-meta">Flutter • Dart • Clean Architecture • Riverpod • BLoC</p>
+            <p>
+              I have 5+ years of experience building production Flutter
+              applications across e-commerce, logistics, healthcare, real
+              estate, booking and real-time platforms. I focus on scalable
+              architecture, performance and reliable mobile experiences.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary resume-link hidden" href="" download>Download Resume</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/abubakarflutter/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="icon-link" href="https://github.com/abubakarflutter" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.48 11.48 0 0 1 12 5.8c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12 24 5.373 18.627 0 12 0z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="assets/img/profile.webp" alt="Portrait of Muhammad Abubakar" width="112" height="112" />
           </div>
         </div>
-        <p class="text-center text-xs text-gray-400 mt-6">
-          Muhammad Abubakar Siddique · Flutter · Android · iOS
-        </p>
-      </footer>
+      </section>
+
+      <section class="wrap" aria-label="Quick stats">
+        <div id="stats" class="stats fade-in"></div>
+      </section>
+
+      <section class="section wrap fade-in">
+        <div class="section-head">
+          <p class="section-kicker">About</p>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-block">
+          <p>
+            I'm a Senior Flutter Developer with 5+ years of experience building
+            and maintaining production mobile applications. My work covers
+            mobile architecture, state management, APIs, real-time
+            communication, payments, maps, Firebase, performance optimization
+            and CI/CD.
+          </p>
+          <p class="about-meta">Based in Pakistan • Open to remote and international opportunities</p>
+        </div>
+      </section>
+
+      <section class="section wrap fade-in" id="skills">
+        <div class="section-head">
+          <p class="section-kicker">Skills</p>
+          <h2>Technical Stack</h2>
+        </div>
+        <div id="skill-groups" class="stack-grid"></div>
+      </section>
+
+      <section class="section wrap fade-in" id="approach">
+        <div class="section-head">
+          <p class="section-kicker">Approach</p>
+          <h2>How I Build Flutter Apps</h2>
+          <p class="section-copy">
+            My approach to building maintainable and production-ready mobile
+            applications.
+          </p>
+        </div>
+        <div id="approach-grid" class="approach-grid"></div>
+      </section>
+
+      <section class="section wrap fade-in" id="projects">
+        <div class="section-head">
+          <p class="section-kicker">Work</p>
+          <h2>Featured Projects</h2>
+          <p class="section-copy">
+            A selection of production applications and platforms I've worked on.
+          </p>
+        </div>
+        <div id="featured-grid" class="featured-grid"></div>
+      </section>
+
+      <section class="section wrap fade-in" id="more-projects">
+        <div class="section-head">
+          <h2>More Projects</h2>
+        </div>
+        <div id="more-grid" class="more-grid"></div>
+      </section>
+
+      <section class="section wrap fade-in" id="experience">
+        <div class="section-head">
+          <p class="section-kicker">Career</p>
+          <h2>Experience</h2>
+        </div>
+        <div id="experience-list"></div>
+      </section>
+
+      <section class="section wrap fade-in" id="education">
+        <div class="section-head">
+          <h2>Education</h2>
+        </div>
+        <div class="card edu-card">
+          <div class="edu-icon" aria-hidden="true">
+            <img src="assets/img/education-cap.png" alt="" />
+          </div>
+          <div>
+            <h3>B.S. Software Engineering</h3>
+            <p>Government College University<br />Faisalabad, Pakistan<br />2020</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact wrap fade-in" id="contact">
+        <div class="card contact-card">
+          <h2>Let's Work Together</h2>
+          <p>
+            I'm open to senior Flutter and mobile engineering opportunities.
+            Feel free to reach out if you'd like to discuss a role or project.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:abubakarflutter@gmail.com">Email Me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/abubakarflutter/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/abubakarflutter" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary resume-link hidden" href="" download>Download Resume</a>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script src="assets/js/main.js?v=layout1"></script>
+    <div id="case-view" class="case wrap hidden"></div>
+
+    <footer class="wrap site-footer">
+      <p>© 2026 Muhammad Abubakar</p>
+      <p>Flutter • Mobile • Android • iOS</p>
+    </footer>
+
+    <script src="assets/js/data.js?v=redesign1"></script>
+    <script src="assets/js/main.js?v=redesign1"></script>
   </body>
 </html>
