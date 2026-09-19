@@ -212,6 +212,21 @@ a {
   padding: 88px 0;
 }
 
+#about,
+#skills,
+#projects,
+#experience,
+#contact,
+#education,
+#approach,
+#more-projects {
+  scroll-margin-top: 84px;
+}
+
+#education.section {
+  padding-top: 24px;
+}
+
 .section-head {
   margin-bottom: 1.75rem;
   max-width: 640px;
@@ -389,6 +404,7 @@ a {
   color: #125f8f;
   font-size: 0.78rem;
   font-weight: 600;
+  max-width: 100%;
 }
 
 .approach-card p,
@@ -501,6 +517,7 @@ a {
 
 .case-cover {
   margin-bottom: 1rem;
+  max-height: 340px;
 }
 
 .case-cover svg,
@@ -788,15 +805,16 @@ html.js .fade-in.is-visible {
 
   .hero-grid,
   .approach-grid,
-  .featured-grid,
-  .stack-grid,
-  .stats,
-  .more-grid {
+  .featured-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-grid {
     justify-items: start;
+  }
+
+  .hero-grid .avatar {
+    order: -1;
   }
 
   .hero h1,
@@ -819,6 +837,13 @@ html.js .fade-in.is-visible {
 
   .case h1 {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .stack-grid,
+  .more-grid {
+    grid-template-columns: 1fr;
   }
 }
 
